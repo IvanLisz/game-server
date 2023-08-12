@@ -1,4 +1,4 @@
-import { Health, IHealth } from "../Health";
+import { Health, IHealth } from "../Character/Resources/Health";
 import { Potion } from "./Potion";
 
 export class HealthPotion extends Potion<IHealth> {

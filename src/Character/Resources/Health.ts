@@ -1,4 +1,4 @@
-import { IResource, Resource } from "./Resource";
+import { IResource, Resource } from "../../Resource";
 
 export interface IHealth extends IResource {
   isAlive(): boolean;
