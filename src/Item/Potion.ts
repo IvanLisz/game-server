@@ -1,4 +1,4 @@
-import { IResource } from "../Resource";
+import { IResource } from "../Resource/Resource";
 import { IItem, Item } from "./Item";
 
 type ClassConstructor<T> = new (...args: any[]) => T;

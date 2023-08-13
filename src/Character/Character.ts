@@ -1,5 +1,5 @@
 import { ISpell } from "../Spell/Spell";
-import { IResources } from "./Resources/Resources";
+import { IResources } from "./CharacterResources/CharacterResources";
 
 export interface ICharacter {
   attack(target: ICharacter): void;

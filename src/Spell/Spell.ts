@@ -1,5 +1,5 @@
 import { ICharacter } from "../Character/Character";
-import { IResources } from "../Character/Resources/Resources";
+import { IResources } from "../Character/CharacterResources/CharacterResources";
 
 export interface ISpell {
   cast(caster: ICharacter, target: ICharacter): void;
@@ -21,7 +21,7 @@ export class Spell implements ISpell {
   }
 
   cast(caster: ICharacter, target: ICharacter): void {
-    caster.resources().take(this._castingResources);
-    target.resources().take(this._targetResources);
+    caster.resources().apply(this._castingResources);
+    target.resources().apply(this._targetResources);
   }
 }
